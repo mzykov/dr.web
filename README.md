@@ -19,27 +19,32 @@ END    - закрывает приложение
 Пример
 
 > GET A
-NULL
+>
+> NULL
 >
 > SET A 10
 >
 > GET A
-10
+>
+> 10
 >
 > COUNTS 10
-1
+>
+> 1
 >
 > SET B 20
 >
 > SET C 10
 >
 > COUNTS 10
-2
+>
+> 2
 >
 > UNSET B
 >
 > GET B
-NULL
+>
+> NULL
 >
 > END
 
@@ -54,16 +59,29 @@ COMMIT   - фиксация изменений текущей (самой вну
 Пример:
 
 > BEGIN
+>
 > SET A 10
+>
 > BEGIN
+>
 > SET A 20
+>
 > BEGIN
+>
 > SET A 30
+>
 > GET A
-30
+>
+> 30
+>
 > ROLLBACK
+>
 > GET A
-20
+>
+> 20
+>
 > COMMIT
+>
 > GET A
-20
+>
+> 20
