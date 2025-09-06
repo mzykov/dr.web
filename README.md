@@ -1,6 +1,8 @@
 # dr.web
 
 > perl ./app.pl
+>
+> prove t/app.t
 
 Команды:
 
